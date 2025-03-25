@@ -2,6 +2,7 @@ import scrapy
 
 class LinkSpider(scrapy.Spider):
     name = "link_spider"
+    allowed_domains = ["quotes.toscrape.com"]
     start_urls = ["http://quotes.toscrape.com/"]
 
     def __init__(self):
@@ -35,5 +36,4 @@ class LinkSpider(scrapy.Spider):
         if current_depth < 4:
             urls = response.css("a::attr(href)").getall()
             for url in urls:
-                if url.startswith("/"):  # 내부 링크만
-                    yield response.follow(url, callback=self.parse)
+                yield response.follow(url, callback=self.parse)
