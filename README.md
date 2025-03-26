@@ -14,8 +14,9 @@ mycrawler/
 │   ├── pipelines.py         # 데이터 후처리 로직
 │   ├── settings.py          # 크롤러 설정
 │   └── spiders/             # 스파이더 코드 (크롤링 로직)
-│       ├── quotes_spider.py
-│       └── link_spider.py
+│				├── link_spider.py
+│       ├── love_spider.py
+│       └── quote_spider.py
 ├── scrapy.cfg               # Scrapy 설정 파일
 ├── requirements.txt         # 의존성 목록
 └── README.md
@@ -51,6 +52,11 @@ scrapy runspider mycrawler/spiders/link_spider.py -o links.json \
   -s CLOSESPIDER_TIMEOUT=30
 ```
 
+#### 💖 Love 태그 명언 + 작가 정보 크롤러 (`love_spider`)
+``` bash
+scrapy crawl love_spider -o love_quotes.json
+```
+
 ---
 
 ## ⚙️ 주요 옵션 설명
@@ -74,5 +80,6 @@ scrapy runspider mycrawler/spiders/link_spider.py -o links.json \
 
 - `quotes_spider.py`: 명언, 작가, 태그 수집
 - `link_spider.py`: 내부 링크를 따라가며 전체 URL 구조 탐색 및 depth 기록
+- `love_spider.py`: 'love' 태그의 작가, 명언, 생년월일 등을 수집
 
 ---
