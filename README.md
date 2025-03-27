@@ -64,7 +64,7 @@ scrapy crawl love_spider -o love_quotes.json
 | 옵션 | 설명 |
 |------|------|
 | `DEPTH_LIMIT=3` | 크롤링 최대 깊이를 3으로 제한 |
-| `CLOSESPIDER_PAGECOUNT=50` | 50페이지 크롤링 후 자동 종료 |
+| `CLOSESPIDER_PAGE``COUNT=50` | 50페이지 크롤링 후 자동 종료 |
 | `CLOSESPIDER_TIMEOUT=30` | 30초가 지나면 자동 종료 |
 
 ---
