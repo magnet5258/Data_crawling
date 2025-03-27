@@ -38,7 +38,7 @@
 
 ---
 
-## 🕷️ Scrapy Project - 웹 크롤링 연습
+# **🕷️ Scrapy Project - 웹 크롤링 연습**
 
 이 프로젝트는 Scrapy 프레임워크를 사용하여 웹 데이터를 크롤링하는 연습용 프로젝트입니다.  
 연습 대상 사이트는 [quotes.toscrape.com](https://quotes.toscrape.com/)입니다.
@@ -124,7 +124,7 @@ scrapy crawl love_spider -o love_quotes.json
 
 ---
 
-# Selenium 프로젝트
+# **Selenium 프로젝트**
 
 이 프로젝트는 Selenium과 BeautifulSoup을 활용하여 다양한 방식으로 웹 데이터를 수집하는 실습을 다룹니다. 각 파일은 서로 다른 웹사이트 또는 방식으로 크롤링을 수행합니다.
 
